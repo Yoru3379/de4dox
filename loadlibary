@@ -1,0 +1,20 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Yorucord haxs", HidePremium = false, SaveConfig = true, ConfigFolder = "Yoruhaxs"})
+
+local Tab = Window:MakeTab({
+	Name = "Load the fucking hacks",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Load in 1 sec",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Yoru3379/yorucord/refs/heads/main/systembroken'))()
+        print("load1")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        print("load2")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+        print("load3")
+  	end    
+})
